@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const DB_FILE = path.join(__dirname, "db.json");
 
@@ -103,6 +103,6 @@ app.delete("/api/tasks/:id", (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-    console.log(`TaskFlow server running at http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`TaskFlow server running on port ${PORT}`);
 });
