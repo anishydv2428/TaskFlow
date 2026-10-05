@@ -1,6 +1,12 @@
 # TaskFlow
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://taskflow-ybys.onrender.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/anishydv2428/TaskFlow)
 
 TaskFlow is a full-stack task management platform that helps users create, organize, track, and manage their daily tasks.
+
+## 🌐 Live Demo
+
+[**Open TaskFlow →**](https://taskflow-ybys.onrender.com/)
 
 ## 📸 Preview
 
