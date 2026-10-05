@@ -2,6 +2,10 @@
 
 TaskFlow is a full-stack task management platform that helps users create, organize, track, and manage their daily tasks.
 
+## 📸 Preview
+
+![TaskFlow Dashboard](screenshots/dashboard.png)
+
 ## 🚀 Features
 
 - Create new tasks

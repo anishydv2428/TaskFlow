@@ -4,16 +4,32 @@
       "id": 1,
       "title": "Complete portfolio web",
       "description": "Build and deploy personal portfolio",
-      "priority": "medium",
-      "status": "in-progress",
+      "priority": "high",
+      "status": "completed",
       "createdAt": "2026-10-05"
     },
     {
       "id": 1791223033419,
-      "title": "one Leetcode Problem",
-      "description": "I have to solve one medium level leetcode problem by 01:00",
+      "title": "Solve 2 DSA Problems",
+      "description": "Solve 2 medium level leetcode problem by 01:00",
       "priority": "medium",
-      "status": "completed",
+      "status": "pending",
+      "createdAt": "2026-10-05"
+    },
+    {
+      "id": 1791225079383,
+      "title": "Deploy TaskFlow",
+      "description": "Deploy personal portfolio",
+      "priority": "high",
+      "status": "in-progress",
+      "createdAt": "2026-10-05"
+    },
+    {
+      "id": 1791225114258,
+      "title": "Learn node.js",
+      "description": "",
+      "priority": "low",
+      "status": "pending",
       "createdAt": "2026-10-05"
     }
   ]
