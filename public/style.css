@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background: #f6f7fb;
+    color: #171923;
+}
+
+.navbar {
+    height: 70px;
+    background: white;
+    border-bottom: 1px solid #e8e8ee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.logo span {
+    background: #635bff;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 8px;
+    margin-right: 7px;
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #635bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.container {
+    width: 86%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero {
+    padding: 55px 0 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.welcome {
+    color: #635bff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.15;
+}
+
+.hero h1 span {
+    color: #635bff;
+}
+
+.subtitle {
+    margin-top: 12px;
+    color: #777b8c;
+    font-size: 16px;
+}
+
+.add-btn {
+    background: #635bff;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 91, 255, 0.25);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.stat-card {
+    background: white;
+    border: 1px solid #e9e9ef;
+    border-radius: 14px;
+    padding: 22px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.stat-icon {
+    width: 45px;
+    height: 45px;
+    background: #f0efff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-card p {
+    color: #858898;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.stat-card h2 {
+    font-size: 25px;
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    margin: 35px 0 25px;
+}
+
+.search-box {
+    flex: 1;
+    background: white;
+    border: 1px solid #dddde6;
+    border-radius: 9px;
+    padding: 11px 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.controls select {
+    border: 1px solid #dddde6;
+    border-radius: 9px;
+    padding: 0 15px;
+    background: white;
+    color: #444;
+}
+
+.tasks-section {
+    padding-bottom: 50px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.section-header h2 {
+    font-size: 21px;
+}
+
+.section-header span {
+    color: #888;
+    font-size: 14px;
+}
+
+.task {
+    background: white;
+    border: 1px solid #e7e7ed;
+    border-radius: 13px;
+    padding: 20px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0,0,0,0.05);
+}
+
+.task h3 {
+    margin-bottom: 7px;
+}
+
+.task p {
+    color: #777;
+    font-size: 14px;
+}
+
+.task-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.badge {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.high {
+    background: #ffe7e7;
+    color: #d33;
+}
+
+.medium {
+    background: #fff4d7;
+    color: #a87500;
+}
+
+.low {
+    background: #e3f8ed;
+    color: #18824b;
+}
+
+.status-select {
+    border: 1px solid #ddd;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.delete-btn {
+    border: none;
+    background: #fff0f0;
+    color: #d33;
+    padding: 8px 11px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 15, 25, 0.5);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    width: 100%;
+    max-width: 480px;
+    padding: 28px;
+    border-radius: 16px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.modal-header button {
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddde6;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 22px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #635bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.empty {
+    background: white;
+    padding: 45px;
+    text-align: center;
+    border-radius: 12px;
+    color: #888;
+}
+
+@media (max-width: 800px) {
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .controls select {
+        height: 45px;
+    }
+
+    .task {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .task-right {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+.edit-btn {
+    border: none;
+    background: #f0efff;
+    color: #635bff;
+    padding: 8px 11px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #e4e2ff;
+}
