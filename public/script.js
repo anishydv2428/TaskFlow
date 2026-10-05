@@ -117,6 +117,20 @@ function updateStats() {
   document.getElementById("completedTasks").textContent = tasks.filter(
     (t) => t.status === "completed"
   ).length;
+
+  const completed = tasks.filter(
+    t => t.status === "completed"
+).length;
+
+const progress = tasks.length === 0
+    ? 0
+    : Math.round((completed / tasks.length) * 100);
+
+document.getElementById("progressPercent").textContent =
+    `${progress}%`;
+
+document.getElementById("progressFill").style.width =
+    `${progress}%`;
 }
 
 async function createTask(event) {
